@@ -1,12 +1,6 @@
-<div align="center">
-<img src="images/Screenshot 2025-09-14 142421.png" alt="reactjs" width="200" height="100" />  
-</div>
-
-<h1 align="center">e6data x IIT BHU Hackathon</h1>
 
 
-<h3 align="center">The e6data x IIT BHU Hackathon was a three-day event being held from 12th to 14th 
-September 2025 at IIT BHU.</h3>
+
 
 <h3 align="center">We provided with four problem statements, each drawn from critical challenges 
 in the fields of data and AI. The problem areas are:
