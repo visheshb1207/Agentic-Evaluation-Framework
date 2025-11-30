@@ -15,13 +15,12 @@ nltk.download('punkt')
 # Page configuration
 st.set_page_config(
     page_title="Agentic Evaluation Framework",
-    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Sidebar
-st.sidebar.title("🧩 Agentic Evaluation")
+st.sidebar.title("Agentic Evaluation")
 st.sidebar.write("Fill in the details to evaluate your AI response.")
 
 sys_req = st.sidebar.text_input("System Requirements")
@@ -29,7 +28,7 @@ user_req = st.sidebar.text_input("User Request")
 context = st.sidebar.text_input("Context")
 response = st.sidebar.text_input("Response")
 
-if st.sidebar.button("✅ Evaluate"):
+if st.sidebar.button("Evaluate"):
     
     
     
@@ -58,24 +57,24 @@ if st.sidebar.button("✅ Evaluate"):
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric(label="🧠 Assumption Confidence", value=f"{assumption_score:.2f}")
+        st.metric(label="Assumption Confidence", value=f"{assumption_score:.2f}")
         
     with col2:
-        st.metric(label="📋 Instruction Score", value=f"{instruction_score:.2f}")
+        st.metric(label="Instruction Score", value=f"{instruction_score:.2f}")
         
     with col3:
-        st.metric(label="🔗 Coherence Score", value=f"{coh_score:.2f}")
+        st.metric(label="Coherence Score", value=f"{coh_score:.2f}")
     
     with col4:
-        st.metric(label="✅ Accuracy Score", value=f"{acc_score:.2f}")
+        st.metric(label="Accuracy Score", value=f"{acc_score:.2f}")
 
     with col5:
-        st.metric(label="👻 Hallucination Score", value=f"{hallu_score[0]:.2f}")
+        st.metric(label="Hallucination Score", value=f"{hallu_score[0]:.2f}")
     
 
-    st.success("✅ Evaluation Complete!")
+    st.success("Evaluation Complete!")
     # Detailed Results Section
-    with st.expander("📖 View Details"):
+    with st.expander("View Details"):
         st.markdown("### Inputs")
         st.write("**System Requirements:**", sys_req)
         st.write("**User Request:**", user_req)
